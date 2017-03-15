@@ -1,8 +1,6 @@
 # flask_collector
 use python3, flask and PostgreSQL to create a data collect web app and deploy to heroku
 
-![alt text](https://github.com/smalltide/flask_collector/blob/master/screenshot.gif "flask_collector")
-
 1. python3
 2. flask
 3. PostgreSQL
@@ -41,6 +39,8 @@ if deploy to Heroku
   > echo "python-3.6.0" > runtime.txt
   > heroku login
   > heroku create flask-collector
+  > heroku addons:create heroku-postgresql:hobby-dev --app flask-collector
+  > heroku config --app flask-collector
   > heroku git:remote -a flask-collector
   > git push heroku master
 ```

@@ -43,4 +43,9 @@ if deploy to Heroku
   > heroku config --app flask-collector
   > heroku git:remote -a flask-collector
   > git push heroku master
+  > heroku run bash or heroku run python
+  > from app import db
+  > db.create_all()
+  > heroku pg:psql --app flask-collector
+  > heroku open
 ```

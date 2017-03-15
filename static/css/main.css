@@ -44,3 +44,9 @@ html, body {
     margin: 100px;
 }
 
+.message {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #ff9999;
+}
+

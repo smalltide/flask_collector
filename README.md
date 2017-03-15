@@ -11,6 +11,11 @@ use python3, flask and PostgreSQL to create a data collect web app and deploy to
   > git@github.com:smalltide/flask_collector.git
   > cd flask_collector
   > pip3 install flask
+  > pip3 install psycopg2
+  > pip3 install Flask-SQLAlchemy
+  > createdb -O ice height_collector
+  > from app import db
+  > db.create_all()
   > python3 app.py
 ```
 
@@ -20,6 +25,11 @@ if need virtualenv and deploy to Heroku
   > pip3 install virtualenv
   > python3 -m venv venv
   > venv/bin/pip3 install flask
+  > venv/bin/pip3 install psycopg2
+  > venv/bin/pip3 install Flask-SQLAlchemy
+  > createdb -O ice height_collector
+  > from app import db
+  > db.create_all()
   > venv/bin/python3 app.py
 ```
 

@@ -28,6 +28,7 @@ html, body {
     width: 350px;
     height: 15px;
     font-size:  15px;
+    padding: 20px;
     margin: 2px;
     transition: all 0.2s ease-in-out;
 }

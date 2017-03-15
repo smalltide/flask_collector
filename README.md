@@ -20,14 +20,14 @@ if need virtualenv and deploy to Heroku
   > pip3 install virtualenv
   > python3 -m venv venv
   > venv/bin/pip3 install flask
-  > venv/bin/python3 web.py
+  > venv/bin/python3 app.py
 ```
 
 if deploy to Heroku
 ```
   > venv/bin/pip3 install gunicorn
   > venv/bin/pip3 freeze > requirements.txt
-  > echo "web: gunicorn web:app" > Procfile
+  > echo "web: gunicorn app:app" > Procfile
   > echo "python-3.6.0" > runtime.txt
   > heroku login
   > heroku create flask-collector

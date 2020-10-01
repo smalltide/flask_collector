@@ -1,4 +1,4 @@
-# flask_collector
+# Data Collector Using Flask and Postgres Database
 use python3, flask and PostgreSQL to create a data collect web app and deploy to heroku
 
 1. python3
